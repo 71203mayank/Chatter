@@ -11,6 +11,9 @@ const fetchData = async () => {
     //console.log(data.data)
     data = data.data
 
+    if(data === {})
+        return ""
+
     if(data.type === "balance")
         return `You have ${data.balance} AED left in your account`
     else if(data.type === "dues")

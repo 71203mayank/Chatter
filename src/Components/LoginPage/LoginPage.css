@@ -5,6 +5,7 @@
     background-position: 30%;
     background-size:cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .loginHead{
@@ -24,7 +25,7 @@
 }
 .logo2{
     height:50px;
-    width:50px;
+    width:175px;
 }
 .logoright{
     margin-top:10px;
@@ -123,6 +124,7 @@
 
 .formDiv1:hover{
     border:1px solid #24a0ed;
+    box-shadow: 0 0 5px #24a0ed;
     color:#24a0ed;
 }
 .LogInput{

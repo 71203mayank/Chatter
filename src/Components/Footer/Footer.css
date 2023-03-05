@@ -1,5 +1,6 @@
 .footer{
     height: 200px;
+    width:100vw;
     background-color: rgba(21,21,21,0.8);
     display:flex;
     /* flex-wrap: wrap; */
@@ -9,7 +10,7 @@
 .subFooter{
     height:100px;
     width:200px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 10px;
 }
 
@@ -42,13 +43,11 @@
 @media screen and (max-width:400px){
     .footer{
         height:100vh;
-        /* background-color: rgba(21,21,21,0.8); */
-        display:grid;
+        background-color: rgba(21,21,21,0.8);
+        display:flex;
         flex-wrap: wrap;
-        align-items:none;
-        justify-content:none;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto 100px auto 100px auto 100px;
+        align-items: center;
+        justify-content: space-around;
     }
     .subfooter{
         margin:10px ;

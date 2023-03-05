@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { fetchData } from "../../api/apicalls";
+import Footer from "../Footer/Footer";
 import './PageOne.css';
 
 function PageOne(){
@@ -8,19 +9,21 @@ function PageOne(){
     useEffect(() => {
         const interval = setInterval(async () => {
             let newData = await fetchData()
-            setData(newData)
-        }, 10000)
+            if(newData !== "")
+                setData(newData)
+        }, 5000)
 
         return () => clearInterval(interval);
     }, [])
 
     return(
+        <>
         <div className="PageOne">
             <div className="loginHead">
         	    <div className="logo1 logoleft">
                     <img src='/Assets/jmrLogo.png' alt='jmrlogo'></img>
                 </div>
-        	    <div className="logo2 logoright"><img src='/Assets/ChatterLogo.png' alt='chatterlogo'></img></div>
+        	    <div className="logo2 logoright"><img src='/Assets/Chatter.png' alt='chatterlogo'></img></div>
             </div>
             <div className="dialogFlowContainer">
                 <div className="dialogFlowContainer1">
@@ -57,6 +60,8 @@ function PageOne(){
             
             </div>
         </div>
+        <Footer/>
+        </>
     );
 }
 

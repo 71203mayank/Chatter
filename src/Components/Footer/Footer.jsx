@@ -8,6 +8,7 @@ function Footer(){
                 <img src='/Assets/jmrLogo.png' alt='jmrLogo'></img>
             </div>
             <div className="subFooter">
+                <img src='/Assets/Chatter2.png' alt='chatterLogo'></img>
                 
             </div>
             <div className="credits">

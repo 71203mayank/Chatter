@@ -25,6 +25,7 @@
     border-top: 2px solid rgba(228, 226, 226, 0.986);
     border-right: 2px solid rgba(228, 226, 226, 0.986);
     border-bottom: 2px solid rgba(228, 226, 226, 0.986);
+    background-color:#a5d175;
 }
 .outputHead{
     height:80px;
@@ -37,14 +38,16 @@
     
 }
 .outputData{
-    height:max-content;
+    height:200px;
     width:250px;
     /* border: 1px solid black; */
     position:relative;
     color:white;
     top:5%;
     left:15%;
-    background-color:#a5d175;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    /* padding:10px; */
 
 
 }

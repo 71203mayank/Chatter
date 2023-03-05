@@ -1,24 +1,31 @@
-import React from "react";
+import React, { useContext } from "react";
 import { postUserData } from "../../api/apicalls";
 import './LoginPage.css';
 import { motion } from "framer-motion";
+import Footer from "../Footer/Footer";
+import { userContext } from "../../App";
 
 function LoginPage(){
-    const submitHandler = (e) => {
+    const { uctx } = useContext(userContext);
+    const [ user, setUser ] = uctx;
+
+    const submitHandler = async (e) => {
         e.preventDefault()
         let email = document.getElementById("mail").value
         let number = document.getElementById("phNumber").value
 
-        postUserData({email, number})
+        await postUserData({email, number})
+        setUser({email, number})
     }
 
     return(
+        <>
         <div className="login">
             <div className="loginHead">
         	    <div className="logo1 logoleft">
                     <img src='/Assets/jmrLogo2.png' alt='jmrlogo'></img>
                 </div>
-        	    <div className="logo2 logoright"><img  src='/Assets/ChatterLogo.png' alt='chatterlogo'></img></div>
+        	    <div className="logo2 logoright"><img  src='/Assets/Chatter2.png' alt='chatterlogo'></img></div>
             </div>
             <div className="formContainer">
                 <motion.div className="loginTitle"
@@ -56,7 +63,10 @@ function LoginPage(){
 
                 </form>
             </div>
+
         </div>
+        <Footer/>
+        </>
     );
 }
 
