@@ -1,0 +1,203 @@
+.login{
+    height:100vh;
+    width: 100vw;
+    background-image:url('./../../../public/Assets/alexaImg1.jpg');
+    background-position: 30%;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.loginHead{
+    height:75px;
+    width:100vw;
+    display: flex;
+    justify-content:space-between;
+}
+.logo1{
+    height:50px;
+    width:100px;
+}
+.logoleft{
+    
+    margin-top:10px;
+    margin-left:10px;
+}
+.logo2{
+    height:50px;
+    width:50px;
+}
+.logoright{
+    margin-top:10px;
+    margin-right:25px;
+}
+.logo2 img{
+    height:100%;
+    width: 100%;
+}
+.logo1 img{
+    height:100%;
+    width: 100%;
+}
+.formContainer{
+    display: flex;
+    justify-content:last baseline;
+}
+/* landing page intro */
+
+.loginTitle{
+    position:absolute;
+    bottom:25%;
+    left:5%;
+    color:white;
+}
+.span1{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 40%;
+}
+.span2{
+    font-size: 80px;
+    font-weight: 800;
+}
+.span3{
+    font-size: 25px;
+    line-height: 10%;
+    line-height: normal;
+}
+.span4{
+    font-size: 25px;
+}
+
+/* login form */
+.loginForm{
+    height:375px;
+    width:375px;
+    border-radius: 10px;
+    background-color:rgba(54,69,79,0.6);
+    position:absolute;
+    bottom: 10%;
+    right:5%;
+
+}
+
+.loginForm2{
+    display:flex;
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
+.loginForm2 span{
+    font-size: 12px;
+    color: white;
+    position:relative;
+    top:5px;
+    right: 10px;
+
+}
+.poweredBy{
+    height:25px;
+    width:125px;
+}
+.poweredBy img{
+    height:100%;
+    width:100%;
+}
+.loginForm1{
+    margin-top:100px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.formDiv1{
+    margin: 20px 0 10px 0;
+    width:250px;
+    padding-inline: 5px;
+    padding-top: 5px;
+    background-color: #36454F;
+    color:white;
+    border-radius: 10px;
+    font-size: 14px;
+} 
+
+.formDiv1:hover{
+    border:1px solid #24a0ed;
+    color:#24a0ed;
+}
+.LogInput{
+    background-color: #36454F;
+    width:100%;
+    font-size: 16px;
+    border: none transparent;
+    outline: none;
+    color: #24a0ed;
+    border-radius: 10px;
+    padding-top:10px;
+    
+}
+
+.button{
+    display:flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-around;
+}
+.formBtn{
+    background-color: #24a0ed;
+    border: none transparent;
+    padding:10px 25px;
+    border-radius:10px;
+    color:white;
+}
+.formBtn:hover{
+    scale:1.1;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px){
+    .login{
+        height:150vh;
+        background-position:55%;
+        background-attachment: fixed;
+    }
+    .formContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    .loginTitle{
+        position:relative;
+        bottom:0;
+        left:5%;
+        height: calc( 50vh - 75px);
+        margin-top: 150px;
+
+    }
+    .loginForm{
+        height:325px;
+        width:325px;
+        position:relative;
+        bottom:0;
+        right:0;
+    
+    }
+    .span1{
+        font-size: 40px;
+        font-weight: 600;
+        line-height:10%;
+    }
+    .span2{
+        font-size: 60px;
+        font-weight: 800;
+    }
+    .span3{
+        font-size: 18px;
+        line-height: 10%;
+        line-height: normal;
+    }
+    .span4{
+        font-size: 18px;
+    }
+    
+}

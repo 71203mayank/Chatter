@@ -1,0 +1,139 @@
+.PageOne{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.dialogFlowContainer{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.dialogFlowContainer1{
+    width:60vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dialogFlowRight{
+    height:500px;
+}
+.output{
+    height:300px;
+    width: 300px;
+    border-left:2px solid rgba(128, 128, 128, 0.909);
+    border-top: 2px solid rgba(228, 226, 226, 0.986);
+    border-right: 2px solid rgba(228, 226, 226, 0.986);
+    border-bottom: 2px solid rgba(228, 226, 226, 0.986);
+}
+.outputHead{
+    height:80px;
+    display:flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: #2b313f;
+    
+}
+.outputData{
+    height:max-content;
+    width:250px;
+    /* border: 1px solid black; */
+    position:relative;
+    color:white;
+    top:5%;
+    left:15%;
+    background-color:#a5d175;
+
+
+}
+.ganimate{
+    height:180px;
+    margin-top:10px;
+    border-left:2px solid rgba(128, 128, 128, 0.909);
+    border-top: 2px solid rgba(228, 226, 226, 0.986);
+    border-right: 2px solid rgba(228, 226, 226, 0.986);
+    border-bottom: 2px solid rgba(228, 226, 226, 0.986);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.bar{
+    height:100px;
+    width: 20px;
+    margin: 5px;
+    border-radius:10px;
+}
+.bar1{
+    animation: abar1 2s infinite;
+    animation-timing-function:linear;
+}
+.bar2{
+    animation: abar2 2s infinite;
+    animation-timing-function: linear;
+}
+.bar3{
+    animation: abar3 2s infinite;
+    animation-timing-function: linear;
+}
+.bar4{
+    animation: abar4 2s infinite;
+    animation-timing-function:linear;
+}
+@keyframes abar1 {
+    0%{ height:20px}
+    12.5%{ height:40px}
+    25%{ height:60px}
+    37.5%{height:100px}
+    50%{ height:60px}
+    75%{ height:40px}
+    100%{ height:20px}
+}
+@keyframes abar2 {
+    0%{ height:40px}
+    12.5%{ height:60px}
+    25%{ height:100px}
+    37.5%{height:60px}
+    50%{ height:40px}
+    75%{ height:20px}    
+    100%{ height:40px}
+}
+@keyframes abar3 {
+    0%{ height:60px}
+    12.5%{ height:100px}
+    25%{ height:60px}
+    37.5%{height:40px}
+    50%{ height:20px}
+    75%{ height:40px}
+    100%{ height:60px}
+}
+@keyframes abar4 {
+    0%{ height:100px}
+    12.5%{ height:60px}
+    25%{ height:40px}
+    37.5%{height:20px}
+    50%{ height:40px}
+    75%{ height:60px}
+    100%{ height:100px}
+}
+
+@media screen and (max-width:400px){
+    .PageOne{
+        height: 180vh;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .dialogFlowContainer1{
+        height: calc(180vh - 75px);
+        width:100vw;
+        flex-wrap: wrap;
+    }
+    .dialogFlowContainer1 iframe{
+        margin-top: 20px;
+    }
+    .output{
+        height:300px;
+        width: 95vw;
+    }
+}
